@@ -1,33 +1,36 @@
-# Security
+# Security Policy
 
-## Threat model
+## Reporting a Vulnerability
 
-Obsidian Live Wallpaper runs entirely on your machine. The Node process:
+If you discover a security vulnerability, please report it responsibly:
 
-- binds its HTTP server to the loopback interface only (`127.0.0.1`), so it is
-  not reachable from other devices on your network;
-- reads Markdown from the vault path you configure and writes only `graph.json`
-  and `config.json` inside the project directory;
-- serves a fixed allowlist of static files plus a small JSON/SSE API, and
-  validates every config write against a strict schema before persisting it;
-- emits only node ids, labels, tags, link structure, and modified-times in
-  `graph.json` — never note contents.
+**DO NOT** open a public GitHub issue for security vulnerabilities.
 
-There is no telemetry and no outbound network access; after `npm install` the
-renderer works offline (D3 is vendored locally).
+Instead, please email: **info@jorahone.com**
 
-## Reporting a vulnerability
+Include:
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
 
-If you find a security issue, please report it privately rather than opening a
-public issue:
+## Response Timeline
 
-- Use GitHub's **Report a vulnerability** (Security → Advisories) on the
-  repository, or
-- email the maintainer listed in `package.json`.
+- **Acknowledgment**: Within 48 hours
+- **Initial assessment**: Within 1 week
+- **Fix timeline**: Depends on severity
 
-Please include reproduction steps and the affected version. You can expect an
-acknowledgement within a few days.
+## Supported Versions
 
-## Supported versions
+| Version | Supported |
+|---------|-----------|
+| Latest  | ✅ Yes    |
+| Older   | ❌ No     |
 
-The latest released version receives fixes. Older versions are not maintained.
+## Security Best Practices
+
+When deploying our projects:
+- Use environment variables for secrets
+- Enable HTTPS in production
+- Keep dependencies updated
+- Follow principle of least privilege
