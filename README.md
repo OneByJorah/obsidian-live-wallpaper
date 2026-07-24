@@ -1,30 +1,25 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white">
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
-</div>
 
-<br>
+![obsidian-live-wallpaper banner](docs/assets/banner.svg)
 
-<div align="center">
-  <h1>obsidian-live-wallpaper</h1>
-  <p><strong>Obsidian Vault as Ambient Desktop Scene</strong></p>
-  <p>Turn your Obsidian vault into an ambient desktop wallpaper instead of another hidden sidebar.</p>
-  <p>
-    <a href="#features">Features</a> •
-    <a href="#quick-start">Quick Start</a> •
-    <a href="#presets">Presets</a> •
-    <a href="#contributing">Contributing</a>
-  </p>
+# obsidian-live-wallpaper
+
+Turn your Obsidian vault into an ambient desktop scene
+
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![Language](https://img.shields.io/badge/language-HTML-blue)
+![Fork](https://img.shields.io/badge/status-fork-orange)
 </div>
 
 ---
 
-## Screenshot
+<p align="center">
+  <img src="docs/assets/screenshot.png" alt="obsidian-live-wallpaper preview" width="90%">
+</p>
 
-![obsidian-live-wallpaper](docs/screenshot.png)
-*Obsidian vault graph rendered as an ambient desktop wallpaper.*
+<br>
+
+---
 
 ## Features
 
@@ -64,7 +59,6 @@ npm start      # Launch the wallpaper
 ### Linux Setup
 
 ```bash
-# X11
 npm start
 
 # Wayland (with swaybg or similar)
@@ -142,7 +136,18 @@ MIT © Jhonattan L. Jimenez
 
 ---
 
-<div align="center">
-  <p>Obsidian vault as ambient desktop wallpaper.</p>
-  <p><a href="https://github.com/OneByJorah">@OneByJorah</a></p>
-</div>
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). All contributions follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## 🔒 Security
+
+Found a vulnerability? Please follow our [Security Policy](SECURITY.md) and report privately to `security@jorahone.com`.
+
+## 📄 License
+
+[MIT License](LICENSE) © Jhonattan L. Jimenez (OneByJorah)
+
+---
+
+<p align="center">Built with 🌴 by <a href="https://github.com/OneByJorah">OneByJorah</a> · <a href="https://jorahone.com">jorahone.com</a></p>
